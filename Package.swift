@@ -1,9 +1,11 @@
-// swift-tools-version:4.0
-
+// swift-tools-version:5.2
 import PackageDescription
 
 let package = Package(
     name: "Keystore",
+    platforms: [.iOS(.v11),
+.macOS(.v10_10)])
+  ],
     products: [
         .library(
             name: "Keystore",

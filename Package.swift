@@ -6,8 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Keystore",
     platforms: [.iOS(.v11),
-.macOS(.v10_10)])
-  ],
+.macOS(.v10_10)],
     products: [
         .library(
             name: "Keystore",

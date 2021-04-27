@@ -20,7 +20,7 @@ public struct KeystoreFactory {
     ///
     /// - throws: Some `KeystoreFactory.Error` if any step fails.
     public static func privateKey(from keystore: Keystore, password: String) throws -> Array<UInt8> {
-        print("privateKey \n")
+        print("privateKey 1\n")
         let key = try deriveKey(password: password, kdf: keystore.crypto.kdf, kdfparams: keystore.crypto.kdfparams)
 
         guard key.count >= 32 else {
